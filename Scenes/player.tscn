@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cibmdjxewhhcb" path="res://Assets/Images/player/Run (32x32).png" id="4_x3wgy"]
 [ext_resource type="Texture2D" uid="uid://wayggiqdx8kp" path="res://Assets/Images/player/Wall Jump (32x32).png" id="6_3smsa"]
 [ext_resource type="AudioStream" uid="uid://c6u547qyppk3e" path="res://Assets/Sounds/jump.wav" id="8_8erm5"]
+[ext_resource type="AudioStream" uid="uid://c76h07doe6bk0" path="res://Assets/Sounds/death.wav" id="9_f1ek2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_36dho"]
 atlas = ExtResource("1_x3wgy")
@@ -354,3 +355,6 @@ shape = SubResource("RectangleShape2D_2uh32")
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=937999324]
 stream = ExtResource("8_8erm5")
+
+[node name="DyingSound" type="AudioStreamPlayer2D" parent="." unique_id=1312362277]
+stream = ExtResource("9_f1ek2")
